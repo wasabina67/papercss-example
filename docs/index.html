@@ -32,6 +32,8 @@
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#cards">Cards</a></li>
           <li><a href="#form">Form</a></li>
+          <li><a href="#badges">Badges</a></li>
+          <li><a href="#progress">Progress</a></li>
           <li><a href="#table">Table</a></li>
         </ul>
       </div>
@@ -61,10 +63,16 @@
       <div class="alert alert-success">This is a <strong>success</strong> alert.</div>
       <div class="alert alert-warning">This is a <strong>warning</strong> alert.</div>
       <div class="alert alert-danger">This is a <strong>danger</strong> alert.</div>
-      <div class="alert alert-success alert-dismissible">
-        This is a <strong>dismissible</strong> alert. Click the X to close it.
-        <label class="alert-close" for="alert-close">
-          <input type="checkbox" id="alert-close">X</label>
+
+      <input class="alert-state" id="alert-d1" type="checkbox" />
+      <div class="alert alert-success dismissible">
+        Operation completed successfully!
+        <label class="btn-close" for="alert-d1">X</label>
+      </div>
+      <input class="alert-state" id="alert-d2" type="checkbox" />
+      <div class="alert alert-danger dismissible">
+        Something went wrong. Please try again.
+        <label class="btn-close" for="alert-d2">X</label>
       </div>
     </section>
 
@@ -183,6 +191,24 @@
         </div>
         <button type="submit" class="btn-success">Submit</button>
       </form>
+    </section>
+
+    <!-- Badges -->
+    <section id="badges" class="margin-bottom-large">
+      <h2>Badges</h2>
+      <span class="badge success">New</span>
+      <span class="badge warning">Beta</span>
+      <span class="badge danger">Hot</span>
+      <span class="badge secondary">Info</span>
+    </section>
+
+    <!-- Progress -->
+    <section id="progress" class="margin-bottom-large">
+      <h2>Progress</h2>
+      <progress value="25" max="100"></progress>
+      <progress class="secondary" value="50" max="100"></progress>
+      <progress class="success" value="75" max="100"></progress>
+      <progress class="warning" value="90" max="100"></progress>
     </section>
 
     <!-- Table -->
